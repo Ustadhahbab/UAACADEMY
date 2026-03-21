@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UA Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="top-banner">
+        <picture>
+            <source media="(max-width: 768px)" srcset="assets/bannermob.png">
+            <img src="assets/bannerslim.png" alt="Welcome Banner">
+        </picture>
+    </div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">UA Academy</a>
+            <div class="menu-toggle">&#9776;</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <!-- <a href="videos.html">Videos</a> -->
+                <a href="FreeResources.html">Free Resources</a>
+
+                <a href="price.html">Price</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch or book your session below.</p>
+            </div>
+        </section>
+
+        <!-- Contact Details -->
+        <section class="container" style="text-align: center; margin-bottom: 4rem;">
+            <div class="card-grid" style="max-width: 800px; margin: 0 auto;">
+                <div class="card">
+                    <i class="fas fa-envelope"
+                        style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:hello@uaacademy.co.uk">hello@uaacademy.co.uk</a></p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-phone"
+                        style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h3>Phone</h3>
+                    <p>07715 335 441</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="container">
+            <div class="section-title">
+                <h2>Book a Meeting</h2>
+                <p>Ready to start? Schedule a time directly using our calendar.</p>
+            </div>
+
+            <div class="booking-wrapper">
+                <div class="tidycal-embed" data-path="ua-academy/20-minute-consultation-call"></div>
+                <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p class="copyright">&copy; 2026 UA Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('menu-open');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

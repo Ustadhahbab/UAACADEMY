@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - UA Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-banner">
+        <picture>
+            <source media="(max-width: 768px)" srcset="assets/bannermob.png">
+            <img src="assets/bannerslim.png" alt="Welcome Banner">
+        </picture>
+    </div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">UA Academy</a>
+            <div class="menu-toggle">&#9776;</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="services.html">Services</a>
+                <!-- <a href="videos.html">Videos</a> -->
+                <a href="FreeResources.html">Free Resources</a>
+
+                <a href="price.html">Price</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Meet the team behind UA Academy</p>
+            </div>
+        </section>
+
+        <section class="container" style="margin-bottom: 4rem;">
+            <div class="about-grid">
+                <!-- Images Column -->
+                <div class="about-images">
+                    <div class="about-img-container">
+                        <img src="assets/ka'ba.png" alt="Kaaba">
+                    </div>
+                    <div class="about-img-container">
+                        <img src="assets/babz.png" alt="Ustadh Ahbabur Rahman">
+                    </div>
+                </div>
+
+                <!-- Text Column -->
+                <div class="about-text">
+                    <h2>Ustadh Ahbabur Rahman</h2>
+                    <h3>Lead Counsellor & Coach</h3>
+                    <p>With over 16 years of service as an Imam and Khateeb, he has dedicated his life to guiding
+                        communities, developing youth, and strengthening spiritual foundations. He has established two
+                        Madrasas serving over 400 students, creating structured environments where knowledge,
+                        discipline, and character development go hand in hand. <br> <br>
+
+                        Alongside his religious leadership, he has founded and built four businesses, including ventures
+                        that generated £75,000 profit within a single year. This real-world entrepreneurial experience
+                        allows him to mentor individuals not only in spiritual growth, but also in performance,
+                        leadership, and execution. <br> <br>
+
+                        He has coached over 30 individuals in personal development, discipline-building, and faith-based
+                        performance, helping them gain clarity, strengthen consistency, and raise their standards in
+                        both their personal and professional lives.
+                        Unlike traditional scholars confined to the pulpit or business mentors disconnected from
+                        spiritual depth, he integrates faith, leadership, discipline, and entrepreneurship into one
+                        cohesive framework. His approach is structured, practical, and rooted in both sacred knowledge
+                        and lived experience. <br> <br>
+
+                        As a faith-based performance coach, leadership mentor, spiritual development mentor, and youth
+                        transformation coach, he works with individuals who want more than inspiration, they want
+                        structure, accountability, and measurable growth. <br> <br>
+
+                        He believes that true success is not choosing between dunya and akhirah, but excelling in both
+                        through discipline, intention, and action. <br> <br>
+
+                        Through education, mentorship, and leadership, his mission is to develop confident, focused, and
+                        purpose-driven individuals who live with clarity, consistency, and conviction.</p>
+
+                    <h3 style="margin-top: 2rem;">Qualifications</h3>
+                    <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 2rem; color: var(--text-muted);">
+                        <li>MA in Arabic & Islamic Theology</li>
+                        <li>Qualified Counsellor</li>
+                        <li>SFBT (Solution Focused Brief Therapy) Specialist</li>
+                        <li>Certified Life Coach</li>
+                        <li>Certification in Career Coaching</li>
+                        <li>School Counsellor</li>
+                        <li>Behaviour Management Specialist</li>
+                        <li>Safeguarding and Child Protection Officer</li>
+                        <li>Certification in Advanced SEN</li>
+                        <li>Cyber Security Risk Analyst</li>
+                        <li>Boxing coach</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p class="copyright">&copy; 2026 UA Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('menu-open');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price - UA Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="top-banner">
+        <picture>
+            <source media="(max-width: 768px)" srcset="assets/bannermob.png">
+            <img src="assets/bannerslim.png" alt="Welcome Banner">
+        </picture>
+    </div>
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">UA Academy</a>
+            <div class="menu-toggle">&#9776;</div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <!-- <a href="videos.html">Videos</a> -->
+                <a href="FreeResources.html">Free Resources</a>
+                <a href="price.html" class="active">Price</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Affordable Pricing with Purpose</h1>
+                <p>Investing in your future.</p>
+            </div>
+        </section>
+
+        <section class="container" style="max-width: 1200px; text-align: center;">
+            <div style="max-width: 800px; margin: 0 auto; margin-bottom: 3rem;">
+                <p style="margin-bottom: 1rem;">At UA Academy, our pricing reflects a commitment to serving the Muslim
+                    community while ensuring the quality and value of our services. We’ve intentionally kept our rates
+                    affordable so that everyone can access the benefits of counselling, life coaching, and mentoring. At
+                    the same time, we strive to maintain professionalism and excellence, offering a service that’s taken
+                    seriously and delivers meaningful, lasting results.</p>
+                <p>This balance allows us to support as many individuals as possible while ensuring you receive the
+                    attention, expertise, and dedication you deserve. Investing in personal growth and well-being is an
+                    investment in your future, and we’re here to make that journey accessible yet impactful.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Counselling -->
+                <div class="pricing-card">
+                    <div class="pricing-info">
+                        <h3>Counselling</h3>
+                        <p class="price-type">Weekdays</p>
+                        <p class="price-amount">£70 / 60 Mins</p>
+                        <p class="price-type">Weekends</p>
+                        <p class="price-amount">£90 / 60 Mins</p>
+                    </div>
+                </div>
+
+                <!-- Couples -->
+                <div class="pricing-card">
+                    <div class="pricing-info">
+                        <h3>Counselling for Couples</h3>
+                        <p class="price-type">Weekdays</p>
+                        <p class="price-amount">£110 / 90 Mins</p>
+                        <p class="price-type">Weekends</p>
+                        <p class="price-amount">£130 / 90 Mins</p>
+                    </div>
+                </div>
+
+                <!-- Life Coaching -->
+                <div class="pricing-card">
+                    <div class="pricing-info">
+                        <h3>Life Coaching</h3>
+                        <p style="margin-top: 1rem;">Please get in touch for the Life Coaching Program price plan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="contact.html" class="btn-primary-custom">Book a FREE 20 mins consultation call</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p class="copyright">&copy; 2026 UA Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('menu-open');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
