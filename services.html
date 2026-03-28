@@ -209,8 +209,8 @@
             </div>
             <div
                 style="background: white; padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color); display: inline-block;">
-                <img src="assets/whoisthisfor.png" alt="Life Coaching Journey Timeline"
-                    style="max-width: 100%; height: auto; border-radius: 4px;">
+                <img src="assets/whoisthisfor.png" alt="Life Coaching Journey Timeline" class="clickable-img"
+                    style="max-width: 100%; height: auto; border-radius: 4px; cursor: pointer;">
             </div>
         </section>
 
@@ -259,6 +259,42 @@
         document.querySelector('.menu-toggle').addEventListener('click', () => {
             document.body.classList.toggle('menu-open');
             document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Lightbox functionality for clickable images
+        document.querySelectorAll('.clickable-img').forEach(img => {
+            img.addEventListener('click', () => {
+                // Create overlay
+                const overlay = document.createElement('div');
+                overlay.style.position = 'fixed';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100vw';
+                overlay.style.height = '100vh';
+                overlay.style.backgroundColor = 'rgba(0,0,0,0.85)';
+                overlay.style.zIndex = '9999';
+                overlay.style.display = 'flex';
+                overlay.style.justifyContent = 'center';
+                overlay.style.alignItems = 'center';
+                overlay.style.cursor = 'zoom-out';
+                
+                // Create enlarged image
+                const enlargedImg = document.createElement('img');
+                enlargedImg.src = img.src;
+                enlargedImg.style.maxWidth = '90vw';
+                enlargedImg.style.maxHeight = '90vh';
+                enlargedImg.style.objectFit = 'contain';
+                enlargedImg.style.borderRadius = '8px';
+                enlargedImg.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+                
+                overlay.appendChild(enlargedImg);
+                document.body.appendChild(overlay);
+                
+                // Remove on click
+                overlay.addEventListener('click', () => {
+                    document.body.removeChild(overlay);
+                });
+            });
         });
     </script>
 </body>
