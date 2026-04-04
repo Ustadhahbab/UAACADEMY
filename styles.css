@@ -994,3 +994,24 @@ select:focus {
         padding-right: 5px;
     }
 }
+
+/* Resource Articles */
+.resource-article {
+    background: white; 
+    padding: 2.5rem; 
+    border-radius: 8px; 
+    border: 1px solid var(--border-color); 
+    line-height: 1.8; 
+    color: var(--text-main); 
+    margin-bottom: 3rem;
+}
+
+.resource-article.featured-video {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .resource-article {
+        padding: 1rem;
+    }
+}
