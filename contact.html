@@ -1,102 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - UA Academy</title>
+    <title>Contact - UA Academy</title>
+    <meta name="description" content="Book a free 20-minute consultation with UA Academy, or get in touch by email, phone or WhatsApp.">
+    <meta property="og:title" content="Contact - UA Academy">
+    <meta property="og:description" content="Book a free 20-minute consultation with UA Academy, or get in touch by email, phone or WhatsApp.">
+    <meta property="og:image" content="https://uaacademy.co.uk/assets/pfp.jpeg">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Figtree:wght@400;500;600&family=Amiri:wght@400;700&display=swap">
     <link rel="stylesheet" href="styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="UA Academy home">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M15 12v14a7 7 0 0 0 14 0"/><path d="M21 34 29 11l8 23M24.5 26h9"/></svg>
+      <span><span class="brand-name">UA Academy</span><span class="brand-sub">Coaching · Counselling · Education</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <nav class="links" id="navLinks">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="programmes.html">Programmes &amp; Investment</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="FreeResources.html">Resources</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn btn-gold" href="contact.html">Book a free call</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="top-banner">
-        <picture>
-            <source media="(max-width: 768px)" srcset="assets/bannermob.png">
-            <img src="assets/bannerslim.png" alt="Welcome Banner">
-        </picture>
+<main id="main">
+  <section class="page-hero"><div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Start with <em>one conversation.</em></h1>
+    <p class="lede">Book a free, confidential 20-minute call, or get in touch directly.</p>
+  </div></section>
+  <section class="band">
+    <div class="wrap contact-grid">
+      <div style="display:flex;flex-direction:column;gap:40px;min-width:0">
+        <div class="contact-list">
+          <div class="c-row"><div><div class="label">Email</div><a class="val" id="v-email" href="mailto:hello@uaacademy.co.uk" style="text-decoration:none">hello@uaacademy.co.uk</a></div><button class="copy" type="button" data-copy="v-email">Copy</button></div>
+          <div class="c-row"><div><div class="label">Phone</div><a class="val" id="v-phone" href="tel:+447715335441" style="text-decoration:none">07715 335 441</a></div><button class="copy" type="button" data-copy="v-phone">Copy</button></div>
+          <div class="c-row"><div><div class="label">WhatsApp</div><div class="val" style="user-select:auto">Message us any time</div></div><a class="copy" style="text-decoration:none" href="https://wa.me/447715335441" target="_blank" rel="noopener">Open ↗</a></div>
+        </div>
+        <div>
+          <h3 style="font-size:1.6rem;margin-bottom:16px">What happens on the call</h3>
+          <ol class="steps3">
+            <li><div><b>We listen</b><span>You share where you are and what you want to change.</span></div></li>
+            <li><div><b>We advise</b><span>We suggest whether coaching or counselling fits best.</span></div></li>
+            <li><div><b>You decide</b><span>No pressure. If it's right, we plan your first session.</span></div></li>
+          </ol>
+        </div>
+      </div>
+      <div class="booking">
+        <span class="eyebrow">Book online</span>
+        <h2>Free 20-minute consultation</h2>
+        <div class="tidycal-wrap"><div class="tidycal-embed" data-path="ua-academy/20-minute-consultation-call"></div></div>
+        <p class="muted" style="font-size:.9rem">Calendar not loading? <a class="more" href="https://tidycal.com/ua-academy/20-minute-consultation-call" target="_blank" rel="noopener">Open the booking page ↗</a></p>
+      </div>
     </div>
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">UA Academy</a>
-            <div class="menu-toggle">&#9776;</div>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="services.html">Services</a>
-                <!-- <a href="videos.html">Videos</a> -->
-                <a href="FreeResources.html">Free Resources</a>
+  </section>
+</main>
 
-                <a href="price.html">Price</a>
-                <a href="testimonials.html">Testimonials</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html" class="active">Contact Us</a>
-            </nav>
-        </div>
-    </header>
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="index.html" aria-label="UA Academy home">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M15 12v14a7 7 0 0 0 14 0"/><path d="M21 34 29 11l8 23M24.5 26h9"/></svg>
+        <span class="brand-name">UA Academy</span>
+      </a>
+      <p class="about">Faith-centred coaching, counselling and education, led by Ustadh Ahbabur Rahman.</p>
+    </div>
+    <div><h4>Services</h4><ul><li><a href="services.html">Life coaching</a></li><li><a href="services.html">Counselling &amp; therapy</a></li><li><a href="services.html">Training &amp; workshops</a></li><li><a href="FreeResources.html">Free resources</a></li></ul></div>
+    <div><h4>Academy</h4><ul><li><a href="about.html">About</a></li><li><a href="testimonials.html">Client stories</a></li><li><a href="faq.html">FAQ</a></li><li><a href="index.html">Privacy policy</a></li></ul></div>
+    <div><h4>Get in touch</h4><ul><li class="contact-line">hello@uaacademy.co.uk</li><li class="contact-line">07715 335 441</li><li><a href="https://wa.me/447715335441" target="_blank" rel="noopener">Message on WhatsApp ↗</a></li></ul></div>
+  </div>
+  <div class="wrap legal"><span>© 2026 UA Academy. All rights reserved.</span><span>London, United Kingdom</span></div>
+</footer>
 
-    <main class="main-content">
-        <section class="page-hero">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <p>Get in touch or book your session below.</p>
-            </div>
-        </section>
+<a class="wa" href="https://wa.me/447715335441" target="_blank" rel="noopener" aria-label="Message UA Academy on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+  WhatsApp
+</a>
 
-        <!-- Contact Details -->
-        <section class="container" style="text-align: center; margin-bottom: 4rem;">
-            <div class="card-grid" style="max-width: 800px; margin: 0 auto;">
-                <div class="card">
-                    <i class="fas fa-envelope"
-                        style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3>Email</h3>
-                    <p><a href="mailto:hello@uaacademy.co.uk">hello@uaacademy.co.uk</a></p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-phone"
-                        style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <h3>Phone</h3>
-                    <p>07715 335 441</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Booking Section -->
-        <section class="container">
-            <div class="section-title">
-                <h2>Book a Meeting</h2>
-                <p>Ready to start? Schedule a time directly using our calendar.</p>
-            </div>
-
-            <div class="booking-wrapper">
-                <div class="tidycal-embed" data-path="ua-academy/20-minute-consultation-call"></div>
-                <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <p class="copyright">&copy; 2026 UA Academy. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', () => {
-            document.body.classList.toggle('menu-open');
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+<script src="script.js"></script>
+    <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
 </body>
 
 </html>
