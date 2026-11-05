@@ -359,5 +359,7 @@ html{scroll-behavior:smooth}
 .course-hero-copy{display:flex;flex-direction:column;gap:16px;min-width:0}
 .course-media{display:flex;justify-content:center;align-items:center;gap:24px;min-width:0}
 .course-media img{display:block;height:auto}
-.course-media .book{width:min(300px,100%);filter:drop-shadow(0 18px 24px rgba(36,48,42,.18))}
-@media (max-width:900px){.page-hero .wrap.course-hero{grid-template-columns:1fr;gap:32px}.course-media .book{width:min(240px,70%)}}
+.course-media .poster{display:block;width:min(380px,100%);border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 40px -18px rgba(36,48,42,.35);transition:transform .2s}
+.course-media .poster:hover{transform:translateY(-3px)}
+.course-media .poster img{width:100%}
+@media (max-width:900px){.page-hero .wrap.course-hero{grid-template-columns:1fr;gap:32px}.course-media .poster{width:min(360px,100%)}}
