@@ -338,3 +338,28 @@ html{scroll-behavior:smooth}
 .tidycal-wrap{min-height:520px}
 .skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--gold-ink);padding:8px 14px;border-radius:8px;z-index:50}
 .skip:focus{left:12px}
+
+/* Courses */
+.course-intro{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:start}
+.course-two{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.head h2 em{font-style:italic;color:var(--sage)}
+.sessions{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.session{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.session .num{font-family:var(--font-display);font-size:2.4rem;line-height:1;color:var(--gold)}
+.session h3{font-size:1.65rem}
+.session .sub{font-weight:600;color:var(--ink);font-size:.98rem;line-height:1.4}
+.session p{color:var(--ink-soft);font-size:.95rem}
+.btn-line.on-sage{border-color:var(--on-sage);color:var(--on-sage)}
+.btn-line.on-sage:hover{background:var(--on-sage);color:var(--sage-deep)}
+@media (max-width:900px){.course-intro,.course-two{grid-template-columns:1fr;gap:28px}.sessions{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sessions{grid-template-columns:1fr}}
+.brand-sub{white-space:nowrap}
+@media (min-width:1121px) and (max-width:1320px){.links{gap:16px;font-size:.9rem}.brand-sub{display:none}}
+.page-hero .wrap.course-hero{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+.course-hero-copy{display:flex;flex-direction:column;gap:16px;min-width:0}
+.course-media{display:flex;justify-content:center;align-items:center;gap:24px;min-width:0}
+.course-media img{display:block;height:auto}
+.course-media .poster{display:block;width:min(380px,100%);border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 40px -18px rgba(36,48,42,.35);transition:transform .2s}
+.course-media .poster:hover{transform:translateY(-3px)}
+.course-media .poster img{width:100%}
+@media (max-width:900px){.page-hero .wrap.course-hero{grid-template-columns:1fr;gap:32px}.course-media .poster{width:min(360px,100%)}}
